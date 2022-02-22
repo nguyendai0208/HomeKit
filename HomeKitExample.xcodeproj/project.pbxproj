@@ -13,9 +13,13 @@
 		50814EA927C496ED00F5CD44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50814EA727C496ED00F5CD44 /* Main.storyboard */; };
 		50814EAB27C496EF00F5CD44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50814EAA27C496EF00F5CD44 /* Assets.xcassets */; };
 		50814EAE27C496EF00F5CD44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50814EAC27C496EF00F5CD44 /* LaunchScreen.storyboard */; };
+		50814EB627C497E700F5CD44 /* VLHomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50814EB527C497E700F5CD44 /* VLHomeManager.swift */; };
+		50814EBA27C4984200F5CD44 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50814EB927C4984200F5CD44 /* HomeKit.framework */; };
+		7097BEE56F37710473FA1B3E /* Pods_HomeKitExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F748F9555E3EA127C37AE49 /* Pods_HomeKitExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DEB661832AD3E12F403FE77 /* Pods-HomeKitExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeKitExample.debug.xcconfig"; path = "Target Support Files/Pods-HomeKitExample/Pods-HomeKitExample.debug.xcconfig"; sourceTree = "<group>"; };
 		50814E9E27C496ED00F5CD44 /* HomeKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50814EA127C496ED00F5CD44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50814EA327C496ED00F5CD44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,11 @@
 		50814EAA27C496EF00F5CD44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50814EAD27C496EF00F5CD44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50814EAF27C496EF00F5CD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50814EB527C497E700F5CD44 /* VLHomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLHomeManager.swift; sourceTree = "<group>"; };
+		50814EB727C4984200F5CD44 /* HomeKitExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeKitExample.entitlements; sourceTree = "<group>"; };
+		50814EB927C4984200F5CD44 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		5F748F9555E3EA127C37AE49 /* Pods_HomeKitExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeKitExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA6CB06A2FF107DE81A6430 /* Pods-HomeKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeKitExample.release.xcconfig"; path = "Target Support Files/Pods-HomeKitExample/Pods-HomeKitExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50814EBA27C4984200F5CD44 /* HomeKit.framework in Frameworks */,
+				7097BEE56F37710473FA1B3E /* Pods_HomeKitExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				50814EA027C496ED00F5CD44 /* HomeKitExample */,
 				50814E9F27C496ED00F5CD44 /* Products */,
+				50814EB827C4984200F5CD44 /* Frameworks */,
+				C3243C696B6D3756280FD825 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +69,7 @@
 		50814EA027C496ED00F5CD44 /* HomeKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				50814EB727C4984200F5CD44 /* HomeKitExample.entitlements */,
 				50814EA127C496ED00F5CD44 /* AppDelegate.swift */,
 				50814EA327C496ED00F5CD44 /* SceneDelegate.swift */,
 				50814EA527C496ED00F5CD44 /* ViewController.swift */,
@@ -63,8 +77,27 @@
 				50814EAA27C496EF00F5CD44 /* Assets.xcassets */,
 				50814EAC27C496EF00F5CD44 /* LaunchScreen.storyboard */,
 				50814EAF27C496EF00F5CD44 /* Info.plist */,
+				50814EB527C497E700F5CD44 /* VLHomeManager.swift */,
 			);
 			path = HomeKitExample;
+			sourceTree = "<group>";
+		};
+		50814EB827C4984200F5CD44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50814EB927C4984200F5CD44 /* HomeKit.framework */,
+				5F748F9555E3EA127C37AE49 /* Pods_HomeKitExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3243C696B6D3756280FD825 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DEB661832AD3E12F403FE77 /* Pods-HomeKitExample.debug.xcconfig */,
+				BAA6CB06A2FF107DE81A6430 /* Pods-HomeKitExample.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50814EB227C496EF00F5CD44 /* Build configuration list for PBXNativeTarget "HomeKitExample" */;
 			buildPhases = (
+				5E041F3D31F180A210161F88 /* [CP] Check Pods Manifest.lock */,
 				50814E9A27C496ED00F5CD44 /* Sources */,
 				50814E9B27C496ED00F5CD44 /* Frameworks */,
 				50814E9C27C496ED00F5CD44 /* Resources */,
+				7D6E134026CA4DEFE8803ED6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +168,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E041F3D31F180A210161F88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeKitExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D6E134026CA4DEFE8803ED6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeKitExample/Pods-HomeKitExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeKitExample/Pods-HomeKitExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeKitExample/Pods-HomeKitExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50814E9A27C496ED00F5CD44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50814EB627C497E700F5CD44 /* VLHomeManager.swift in Sources */,
 				50814EA627C496ED00F5CD44 /* ViewController.swift in Sources */,
 				50814EA227C496ED00F5CD44 /* AppDelegate.swift in Sources */,
 				50814EA427C496ED00F5CD44 /* SceneDelegate.swift in Sources */,
@@ -284,11 +362,14 @@
 		};
 		50814EB327C496EF00F5CD44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DEB661832AD3E12F403FE77 /* Pods-HomeKitExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = HomeKitExample/HomeKitExample.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HomeKitExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -303,6 +384,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = neo.com.homekit.HomeKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,11 +393,14 @@
 		};
 		50814EB427C496EF00F5CD44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAA6CB06A2FF107DE81A6430 /* Pods-HomeKitExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = HomeKitExample/HomeKitExample.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HomeKitExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,6 +415,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = neo.com.homekit.HomeKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
